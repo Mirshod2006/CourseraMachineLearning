@@ -1,0 +1,18 @@
+for i in range(X.shape[0]):
+    distance = []
+    for j in range(centroids.shape[0]):
+          norm_ij = np.linalg.norm(X[i]-centroids[j])
+          distance.append(norm_ij)
+    idx[i] = np.argmin(distance)
+
+return idx
+
+np.random.permutation() is can be used to shuffle data inside.
+
+RGB encoding 8-bit unsigned integers ranging from 0 to 255
+
+main colors red, green and blue images are specified with their intensity values. 
+
+image = plt.imread('bird_small.png')
+
+plt.imshow(image) #this code shows the picture of the image
